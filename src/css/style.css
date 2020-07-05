@@ -3,3 +3,25 @@
 @tailwind components;
 /*! purgecss end ignore */
 @tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+.frostEffect {
+  background-attachment: fixed;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.hover {
+  transition: 600ms ease;
+}
+
+@media (min-width: 768px) {
+  .frostEffect {
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+  }
+}

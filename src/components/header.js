@@ -1,79 +1,56 @@
-import { graphql, useStaticQuery, Link } from "gatsby";
-import React, { useState } from "react";
+import React from 'react'
 
-function Header() {
-  const [isExpanded, toggleExpansion] = useState(false);
-  const { site } = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
+const Header = () => {
+  const menuItems = [
+    {
+      id: '1',
+      name: 'about',
+      link: '#about',
+    },
+    {
+      id: '2',
+      name: 'services',
+      link: '#services',
+    },
+    {
+      id: '3',
+      name: 'newsletter',
+      link: '#newsletter',
+    },
+  ]
 
   return (
-    <header className="bg-teal-700">
-      <div className="flex flex-wrap items-center justify-between max-w-4xl p-4 mx-auto md:p-8">
-        <Link to="/">
-          <h1 className="flex items-center text-white no-underline">
-            <svg
-              className="w-8 h-8 mr-2 fill-current"
-              height="54"
-              viewBox="0 0 54 54"
-              width="54"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z" />
-            </svg>
-            <span className="text-xl font-bold tracking-tight">
-              {site.siteMetadata.title}
+    <header className='fixed bottom-0 left-0 z-30 w-full text-gray-100 md:bg-transparent frostEffect md:relative'>
+      <nav className='z-40 flex items-center justify-between w-full px-4 py-8 md:absolute md:top-0 md:left-0 md:p-8'>
+        <div>
+          <h2 className='flex items-center no-underline'>
+            <span className='text-xl font-extrabold tracking-tight uppercase md:hidden'>
+              BCD
             </span>
-          </h1>
-        </Link>
-
-        <button
-          className="flex items-center block px-3 py-2 text-white border border-white rounded md:hidden"
-          onClick={() => toggleExpansion(!isExpanded)}
-        >
-          <svg
-            className="w-3 h-3 fill-current"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>Menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-          </svg>
-        </button>
-
-        <nav
-          className={`${
-            isExpanded ? `block` : `hidden`
-          } md:block md:flex md:items-center w-full md:w-auto`}
-        >
-          {[
-            {
-              route: `/about`,
-              title: `About`,
-            },
-            {
-              route: `/contact`,
-              title: `Contact`,
-            },
-          ].map((link) => (
-            <Link
-              className="block mt-4 text-white no-underline md:inline-block md:mt-0 md:ml-6"
-              key={link.title}
-              to={link.route}
-            >
-              {link.title}
-            </Link>
-          ))}
-        </nav>
-      </div>
+            <span className='hidden text-xl font-semibold tracking-tight uppercase md:block'>
+              Braga`s Carcare Detailing
+            </span>
+          </h2>
+        </div>
+        <div className='flex items-center justify-center font-semibold uppercase'>
+          {menuItems.map((item) => {
+            return (
+              <ul key={item.id}>
+                <li>
+                  <a
+                    className='mx-2 md:mx-4 hover:text-orange-500'
+                    href={item.link}
+                  >
+                    {item.name}
+                  </a>
+                </li>
+              </ul>
+            )
+          })}
+        </div>
+      </nav>
     </header>
-  );
+  )
 }
 
-export default Header;
+export default Header
