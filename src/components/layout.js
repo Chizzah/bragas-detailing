@@ -15,7 +15,7 @@ function Layout({ children }) {
 
       <main>{children}</main>
 
-      <footer className='z-50 py-8 text-gray-100 bg-gray-900'>
+      <footer className='z-50 py-8 text-gray-100 bg-gray-800'>
         <nav className='flex flex-col items-center justify-center w-full max-w-full p-4 mx-auto text-sm text-center md:flex-row md:justify-between md:p-8'>
           <div className='flex items-center justify-start mb-8 md:mb-0 md:order-3'>
             {/* <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> */}

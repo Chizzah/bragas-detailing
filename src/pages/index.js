@@ -175,9 +175,126 @@ const IndexPage = ({ data }) => {
         </div>
       </section>
 
+      {/* Pricing */}
+
+      <section id='pricing' className='w-full py-16 text-center bg-gray-300'>
+        <div className='flex flex-col items-center justify-center max-w-2xl mx-auto'>
+          <h2 className='mb-6 text-2xl font-semibold uppercase md:text-4xl'>
+            Our Pricing
+          </h2>
+          <div className='flex justify-around w-3/5 pt-2 pb-4 lg:w-2/5'>
+            <p className='mt-2 text-lg font-bold text-orange-500 uppercase'>
+              Cars / Bakkies & SUVs
+            </p>
+          </div>
+        </div>{' '}
+        <section className='flex flex-col items-center w-full py-12 lg:flex-row lg:justify-center lg:px-10 '>
+          <article className='w-4/5 px-6 py-10 mb-10 text-center bg-white rounded-lg lg:w-custom lg:px-4 text-primary-dark'>
+            <h5 className='text-base font-bold'>Wash & Dry</h5>
+            <h2 className='flex justify-center pb-4 font-bold border-b border-gray-300'>
+              <span className='mt-6 mr-1 text-xl lg:text-3xl'>R</span>
+              <span className='text-5xl lg:text-6xl'> 70/</span>
+              <span className='mt-6 mr-1 text-xl lg:text-3xl'>R</span>
+              <span className='text-5xl lg:text-6xl'> 100</span>
+            </h2>
+            <ul className='text-sm font-bold'>
+              <li className='pt-4 pb-4 border-b border-gray-300'>
+                Exterior Soap Wash
+              </li>
+              <li className='pt-3 pb-4 border-b border-gray-300'>
+                Interior Clean
+              </li>
+              <li className='pt-4 pb-4 border-b border-gray-300'>
+                Clean Windows
+              </li>
+              <li className='pt-4 pb-4 border-b border-gray-300'>
+                Tyres & Rims
+              </li>
+            </ul>
+            <button
+              className='px-12 py-2 mt-12 text-sm font-bold text-center text-gray-100 uppercase rounded-md xl:px-24 sm:px-16'
+              style={{
+                backgroundImage:
+                  'linear-gradient(90deg, #a3a8f0 0%, #696fdd 100%)',
+              }}
+            >
+              Learn More
+            </button>
+          </article>
+          <article
+            className='w-4/5 px-6 py-16 mb-10 text-center text-white rounded-lg lg:w-10/12 lg:-mt-6'
+            style={{
+              backgroundImage:
+                'linear-gradient(90deg, #a3a8f0 0%, #696fdd 100%)',
+            }}
+          >
+            <h5 className='text-base font-bold '>Mini Detail</h5>
+            <h2 className='flex justify-center pb-4 mt-2 font-bold border-b border-gray-100'>
+              <span className='mt-6 mr-1 text-xl lg:text-3xl'>R</span>
+              <span className='text-5xl lg:text-6xl'>150/</span>
+              <span className='mt-6 mr-1 text-xl lg:text-3xl'>R</span>
+              <span className='text-5xl lg:text-6xl'> 240</span>
+            </h2>
+            <ul className='text-sm font-bold '>
+              <li className='pt-4 pb-4 border-b border-gray-200'>
+                Exterior Foam Wash
+              </li>
+              <li className='pt-4 pb-4 border-b border-gray-200'>
+                Interior Clean
+              </li>
+              <li className='pt-4 pb-4 border-b border-gray-200'>
+                Tyres & Rims Polish
+              </li>
+              <li className='pt-4 pb-4 border-b border-gray-200'>Black Trim</li>
+              <li className='pt-4 pb-4 border-b border-gray-200'>
+                Shine Detailer
+              </li>
+            </ul>
+            <button className='px-12 py-2 mt-10 text-sm font-bold text-center text-blue-600 uppercase bg-gray-100 rounded-md xl:px-24 sm:px-16'>
+              Learn More
+            </button>
+          </article>
+          <article className='w-4/5 px-6 py-10 mb-10 text-center bg-white rounded-lg lg:w-custom lg:px-4 text-primary-dark'>
+            <h5 className='text-base font-bold'>Full Detail</h5>
+            <h2 className='flex justify-center pb-4 font-bold border-b border-gray-200'>
+              <span className='mt-6 mr-1 text-xl lg:text-3xl'>R</span>
+              <span className='text-5xl lg:text-6xl'>550/</span>
+              <span className='mt-6 mr-1 text-xl lg:text-3xl'>R</span>
+              <span className='text-5xl lg:text-6xl'> 740</span>
+            </h2>
+            <ul className='text-sm font-bold'>
+              <li className='pt-4 pb-4 border-b border-gray-200'>
+                Includes Mini Detailing plus
+              </li>
+              <li className='pt-4 pb-4 border-b border-gray-200'>
+                Shine Detailer & Wet Wax Polish
+              </li>
+              <li className='pt-4 pb-4 border-b border-gray-200'>
+                Upholstery/Leather Clean
+              </li>
+              <li className='pt-4 pb-4 border-b border-gray-200'>
+                Engine Clean
+              </li>
+            </ul>
+            <button
+              className='px-12 py-2 mt-12 text-sm font-bold text-center text-gray-100 uppercase rounded-md xl:px-24 sm:px-16'
+              style={{
+                backgroundImage:
+                  'linear-gradient(90deg, #a3a8f0 0%, #696fdd 100%)',
+              }}
+            >
+              Learn More
+            </button>
+          </article>
+        </section>
+      </section>
+
       {/* Email */}
 
-      <section id='newsletter' className='w-full py-16 text-center bg-gray-300'>
+      <section
+        id='newsletter'
+        className='w-full py-16 text-center text-gray-100 bg-gray-900'
+      >
         <div className='flex flex-col items-center justify-center max-w-2xl mx-auto'>
           <h2 className='mb-6 text-2xl font-semibold uppercase md:text-4xl'>
             Newsletter
