@@ -218,7 +218,7 @@ const IndexPage = ({ data }) => {
                   'linear-gradient(90deg, #a3a8f0 0%, #696fdd 100%)',
               }}
             >
-              Learn More
+              Book Now
             </button>
           </article>
           <article
@@ -251,7 +251,7 @@ const IndexPage = ({ data }) => {
               </li>
             </ul>
             <button className='px-12 py-2 mt-10 text-sm font-bold text-center text-blue-600 uppercase bg-gray-100 rounded-md xl:px-24 sm:px-16'>
-              Learn More
+              Book Now
             </button>
           </article>
           <article className='w-4/5 px-6 py-10 mb-10 text-center bg-white rounded-lg lg:w-custom lg:px-4 text-primary-dark'>
@@ -283,7 +283,7 @@ const IndexPage = ({ data }) => {
                   'linear-gradient(90deg, #a3a8f0 0%, #696fdd 100%)',
               }}
             >
-              Learn More
+              Book Now
             </button>
           </article>
         </section>
