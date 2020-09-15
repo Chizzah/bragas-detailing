@@ -177,7 +177,7 @@ const IndexPage = ({ data }) => {
 
       {/* Pricing */}
 
-      <section id='pricing' className='w-full py-16 text-center bg-gray-300'>
+      <section id='pricing' className='w-full py-16 text-center bg-gray-300 '>
         <div className='flex flex-col items-center justify-center max-w-2xl mx-auto'>
           <h2 className='mb-6 text-2xl font-semibold uppercase md:text-4xl'>
             Our Pricing
@@ -188,8 +188,8 @@ const IndexPage = ({ data }) => {
             </p>
           </div>
         </div>{' '}
-        <section className='flex flex-col items-center w-full py-12 lg:flex-row lg:justify-center lg:px-10 '>
-          <article className='w-4/5 px-6 py-10 mb-10 text-center bg-white rounded-lg lg:w-custom lg:px-4 text-primary-dark'>
+        <section className='flex flex-col items-center w-full max-w-6xl py-12 mx-auto lg:flex-row lg:justify-center lg:px-10'>
+          <article className='w-4/5 px-6 py-10 mb-10 text-center bg-white rounded-lg lg:w-10/12 lg:px-4 text-primary-dark'>
             <h5 className='text-base font-bold'>Wash & Dry</h5>
             <h2 className='flex justify-center pb-4 font-bold border-b border-gray-300'>
               <span className='mt-6 mr-1 text-xl lg:text-3xl'>R</span>
@@ -211,18 +211,12 @@ const IndexPage = ({ data }) => {
                 Tyres & Rims
               </li>
             </ul>
-            <button
-              className='px-12 py-2 mt-12 text-sm font-bold text-center text-gray-100 uppercase rounded-md xl:px-24 sm:px-16'
-              style={{
-                backgroundImage:
-                  'linear-gradient(90deg, #a3a8f0 0%, #696fdd 100%)',
-              }}
-            >
+            <button className='px-12 py-2 mt-12 text-sm font-bold text-center text-gray-100 uppercase bg-blue-500 rounded-md xl:px-24 sm:px-16 focus:outline-none hover hover:bg-gray-200 hover:text-blue-500'>
               Book Now
             </button>
           </article>
           <article
-            className='w-4/5 px-6 py-16 mb-10 text-center text-white rounded-lg lg:w-10/12 lg:-mt-6'
+            className='w-4/5 px-6 py-16 mb-10 text-center text-white rounded-lg lg:w-11/12 lg:-mt-6'
             style={{
               backgroundImage:
                 'linear-gradient(90deg, #a3a8f0 0%, #696fdd 100%)',
@@ -250,11 +244,11 @@ const IndexPage = ({ data }) => {
                 Shine Detailer
               </li>
             </ul>
-            <button className='px-12 py-2 mt-10 text-sm font-bold text-center text-blue-600 uppercase bg-gray-100 rounded-md xl:px-24 sm:px-16'>
+            <button className='px-12 py-2 mt-10 text-sm font-bold text-center text-blue-600 uppercase bg-gray-100 rounded-md xl:px-24 sm:px-16 focus:outline-none hover hover:bg-blue-600 hover:text-gray-100'>
               Book Now
             </button>
           </article>
-          <article className='w-4/5 px-6 py-10 mb-10 text-center bg-white rounded-lg lg:w-custom lg:px-4 text-primary-dark'>
+          <article className='w-4/5 px-6 py-10 mb-10 text-center bg-white rounded-lg lg:w-10/12 lg:px-4 text-primary-dark'>
             <h5 className='text-base font-bold'>Full Detail</h5>
             <h2 className='flex justify-center pb-4 font-bold border-b border-gray-200'>
               <span className='mt-6 mr-1 text-xl lg:text-3xl'>R</span>
@@ -276,13 +270,7 @@ const IndexPage = ({ data }) => {
                 Engine Clean
               </li>
             </ul>
-            <button
-              className='px-12 py-2 mt-12 text-sm font-bold text-center text-gray-100 uppercase rounded-md xl:px-24 sm:px-16'
-              style={{
-                backgroundImage:
-                  'linear-gradient(90deg, #a3a8f0 0%, #696fdd 100%)',
-              }}
-            >
+            <button className='px-12 py-2 mt-12 text-sm font-bold text-center text-gray-100 uppercase bg-blue-500 rounded-md xl:px-24 sm:px-16 focus:outline-none hover hover:bg-gray-200 hover:text-blue-500'>
               Book Now
             </button>
           </article>
